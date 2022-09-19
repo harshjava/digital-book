@@ -25,7 +25,7 @@ public class DigitalBookAuthorModeController {
 
     @PutMapping("/{authorId}/books/{bookId}")
     public BookResponse updateBookDetails(@Valid @RequestBody BookRequest request, @PathVariable Integer authorId, @PathVariable Integer bookId) {
-       return userService.updateeBookDetails(request,authorId,bookId);
+       return userService.updateBookDetails(request,authorId,bookId);
     }
 
 }

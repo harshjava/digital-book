@@ -44,7 +44,7 @@ public class DigitalBookService {
         return bookRepository.save(book);
     }
 
-    public BookResponse updateeBookDetails(BookRequest request,Integer authorId,Integer bookId) {
+    public BookResponse updateBookDetails(BookRequest request,Integer authorId,Integer bookId) {
         User user = new User();
         user.setId(authorId);
         Book book = new Book(request.getResponse().getTitle(),request.getResponse().getPublisher(),request.getResponse().getReleaseDate(),request.getResponse().getCategory(),
